@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- -------------------------------Header----------------------------- -->
+  <header>
+    <!-- ---------MAIN INFO---------- -->
+    <div class="creative-block">
+      <h3 class="creative-block__logo">Creative</h3>
+      <span class="creative-block__slogan">Express your ideas</span>
+    </div>
+    <h1>Creative Thoughts</h1>
+  </header>
+  <!-- ---------MAIN NAVIGATION------------ -->
+  <nav class="main-menu">
+    <section class="main-menu__nav">
+      <a href="#" class="active">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">Inspiration</a>
+      <a href="#">Tutorials</a>
+      <a href="#">Community</a>
+    </section>
+    <!-- -----------BURGER MENU--------------- -->
+    <div class="main-menu__burger">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </label>
+    </div>
+  </nav>
+  <!-- ----------------MAIN CONTAINER------------- -->
+  <div class="container">
+    <!-- ---------LEFT ASIDE-------- -->
+    <aside class="container__aside-main left">
+      <section class="container__aside left--nav">
+        <nav>
+          <a href="#">Dashboard</a>
+          <a href="#">Bookmarks</a>
+          <a href="#">Reading List</a>
+          <a href="#">References</a>
+          <a href="#">Following</a>
+        </nav>
+      </section>
+      <section class="container__aside left--info">
+        <h3>Weekly Inspiration</h3>
+        <p>
+          "Creativity is intelligence having fun." 
+          - Albert Einstein. Explore new ideas every 
+          day and let your imagination flow.
+        </p>
+      </section>
+    </aside>
+    <!-- --------MAIN BLOCK-POSTS-------- -->
+    <main class="container__main">
+      <article class="container__main-block-post">
+        <div class="meta">
+          <span>May 15, 2025</span>
+          <a href="#">Emma Wilson</a>
+          <a href="#">Mindfulness</a>
+          <a href="#">14 comments</a>
+        </div>
+        <h2>The Art of Mindful Creativity</h2>
+        <p>
+          Discover how mindfulness practices can enhance 
+          your creative process. Learn techniques to 
+          quiet your mind and allow ideas to flow 
+          naturally without judgment or pressure
+        </p>
+      </article>
+      <article class="container__main-block-post">
+        <div class="meta">
+          <span>June 2, 2025</span>
+          <a href="#">James Carter</a>
+          <a href="#">Design</a>
+          <a href="#">22 comments</a>
+        </div>
+        <h2>Color Theory for Beginners</h2>
+        <p>Understanding color relationships can transform your creative projects. This guide covers the color wheel, complementary colors, and creating harmonious palettes.</p>
+			</article>
+			<article class="container__main-block-post">
+        <div class="meta">
+          <span>July 10, 2025</span>
+          <a href="#">Sophia Lee</a>
+          <a href="#">Productivity</a>
+          <a href="#">18 comments</a>
+        </div>
+        <h2>Overcoming Creative Block</h2>
+        <p>Every creator faces blocks. Explore proven strategies to reignite your inspiration, from changing environments to creative cross-training in different mediums.</p>
+			</article>
+      <article class="container__main-block-post">
+        <div class="meta">
+          <span>August 5, 2025</span>
+          <a href="#">David Chen</a>
+          <a href="#">Technology</a>
+          <a href="#">9 comments</a>
+        </div>
+        <h2>Digital Tools for Creative Minds</h2>
+        <p>Explore the latest digital tools that can streamline your creative workflow. From AI-assisted design to collaborative platforms, discover how technology can enhance your creative process.</p>
+      </article>
+    </main>
+    <!-- ----------LIGHT ASIDE-------- -->
+    <aside class="container__aside-main right">
+      <section class="container__aside right--tags">
+        <h3>Popular Tags</h3>
+        <div class="container__aside-right--tags-a">
+          <a href="#">#creativity</a>
+          <a href="#">#design</a>
+          <a href="#">#art</a>
+          <a href="#">#inspiration</a>
+          <a href="#">#photograpgy</a>
+          <a href="#">#writing</a>
+        </div>
+      </section>
+      <section class="container__aside right--events">
+        <h3>Upcomming Events</h3>
+        <span>Creative Workshop - June 15</span>
+        <span>Design Conference - July 8</span>
+        <span>Art Exhibition - August 3</span>
+      </section>
+      <section class="container__aside right--news">
+        <h3>Newsletter</h3>
+        <p>Subscribe for weekly creative tips and inspiration.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </aside>
+    
+  </div>
+  <!-- ---------FOOTER------------>
+  <footer>
+    <nav class="footer__menu">
+      <a href="#">About Us</a>
+      <a href="#">Guidelines</a>
+      <a href="#">Support</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </nav>
+    <span>© 2025 Creative Blog. All rights reserved.</span>
+  </footer>
+  <!-- ---------BACKGROUN FOR BURGER------- -->
+  <div id="container__burger-back" class="container__burger-back">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
