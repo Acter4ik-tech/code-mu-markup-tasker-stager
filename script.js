@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const burgerCheckbox = document.getElementById('burger-checkbox');
+  const footerSpace = document.querySelector('footer')
   const leftAside = document.querySelector('.container__aside-main.left');
   const rightAside = document.querySelector('.container__aside-main.right');
   const backgroundForAside = document.getElementById('container__burger-back')
@@ -15,8 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // Показываем или скрываем
       if (this.checked) {
         body.classList.add('burger-open');
+        footerSpace.classList.add('hidden')
       } else {
         body.classList.remove('burger-open');
+        footerSpace.classList.remove('hidden')
       }
       
       // Убираем transition после анимации

@@ -515,10 +515,6 @@ footer {
     display: flex;
   }
 
-  .container__main.hidden-main {
-    display: none; 
-  }
-
   .container__burger-back {
     position: fixed;  /* fixed вместо absolute */
     top: 0;
@@ -548,9 +544,18 @@ footer {
   .container__main-block-post .meta {
     display: none;
   }
+  /* --------Aditional class for fixed white space-------- */
+  footer.hidden {
+    display: none;
+  }
 
-  
+}
 
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 32px;
+    word-spacing: -5px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -577,12 +582,30 @@ footer {
 }
 
 
-@media (max-width: 400px) {
-  header h1 {
-    font-size: 32px;
-    word-spacing: -5px;
+@media (max-width: 570px) {
+
+  footer span {
+    font-size: 10px;
   }
+
+  .footer__menu {
+    display: flex;
+    gap: 5px;
+  }
+
+  .footer__menu a {
+    padding: 4px 7px;
+    font-size: 8px;
+  }
+
+  .footer__menu span {
+    font-size: 9px;
+    color: #6c757d;
+  }
+
 }
+
+
 
 
 
