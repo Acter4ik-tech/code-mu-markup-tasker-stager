@@ -124,6 +124,10 @@ function handleResize() {
     menuFooter.style.display = 'flex'
   } else if (window.innerWidth <= 500) {
     menuFooter.style.display = 'none'
+    if (menuFooter.classList.contains('active')) {
+      menuFooter.classList.remove('active')
+    }
+    buttonFooter.textContent = 'More…'
   }
 }
 
