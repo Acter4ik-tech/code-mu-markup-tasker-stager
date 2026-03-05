@@ -164,6 +164,7 @@ header h1 {
 /* --------------ALL CONTENT--------------- */
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -417,6 +418,24 @@ footer {
   color: rgb(108, 117, 125);
 }
 
+/* --------------Burger container --------------- */
+
+.mobile-aside-container {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  gap: 20px;
+  padding: 0 0 20px;
+}
+
+
+
 
 @media (max-width: 1200px){
   
@@ -455,7 +474,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-  
 
   body {
     display: flex;
@@ -488,27 +506,29 @@ footer {
 
   .container__aside-main.left,
   .container__aside-main.right {
+    margin: 0;
     display: none;
-    position: absolute;
-    z-index: 20;
-    left: 0;
-    right: 0;
-    margin: auto;
+    /* position: absolute; */
+    /* z-index: 20; */
+    /* left: 0; */
+    /* right: 0; */
+    /* margin: auto; */
     opacity: 0;
     visibility: hidden;
   }
 
-  .container__aside-main.left{
+  /* .container__aside-main.left{
     top: 205px;
   }
   .container__aside-main.right{
     top: 740px;
     padding: 0 0 20px 0;
-  }
+  } */
 
 
   body.burger-open .container__aside-main.left,
   body.burger-open .container__aside-main.right,
+  body.burger-open .mobile-aside-container,
   body.burger-open .container__burger-back {
     opacity: 1;
     visibility: visible;
