@@ -122,7 +122,7 @@ function handleResize() {
   if (window.innerWidth > 501) {
     // на больших экранах показываем меню всегда
     menuFooter.style.display = 'flex'
-  } else if (window.innerWidth === 500) {
+  } else if (window.innerWidth <= 500) {
     menuFooter.style.display = 'none'
   }
 }
