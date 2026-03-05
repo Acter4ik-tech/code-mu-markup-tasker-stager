@@ -388,18 +388,20 @@ footer {
 .footer__menu a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: clamp(8px, 1vw, 12px) clamp(14px, 1.6vw, 18px);
   background-color: #f8f1e9;
   border: 1px solid #e8d5c4;
   color: #6c757d;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: clamp(10px, 1.2vw, 14px);
   transition: all 0.3s ease;
 }
 
-.footer__menu span {
-  font-size: 14px;
-  color: #6c757d;
+footer span {
+  font-size: clamp(12px, 1.4vw, 16px);
+  padding-top: 10px;
+  /* color: #6c757d; */
+  color: rgb(108, 117, 125);
 }
 
 
@@ -412,10 +414,20 @@ footer {
   border: black;
 }
 
-.footer__menu span {
-  padding-top: 10px;
-  font-size: 14px;
-  color: rgb(108, 117, 125);
+footer button {
+  display: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: clamp(8px, 1vw, 12px) clamp(14px, 1.6vw, 18px);
+  background-color: #f8f1e9;
+  border: 1px solid #e8d5c4;
+  border-radius: 5px;
+  color: #6c757d;
+}
+
+footer button:hover {
+  background-color: #e8d5c4;
+  color: #2a4b6a;
+  border: 1px solid #e6bd9a;
 }
 
 /* --------------Burger container --------------- */
@@ -571,58 +583,31 @@ footer {
 
 }
 
+@media (max-width: 500px) {
+  .footer__menu {
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    gap: 2vw;
+  }
+
+  .footer__menu.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  footer button {
+    display: block;
+  }
+}
+
 @media (max-width: 400px) {
   header h1 {
     font-size: 32px;
     word-spacing: -5px;
   }
-}
-
-@media (max-width: 570px) {
-
-  footer span {
-    font-size: 13px;
-  }
-
-  .footer__menu {
-  display: flex;
-  gap: 5px;
-  }
-
-  .footer__menu a {
-    padding: 6px 10px;
-    font-size: 11px;
-  }
-
-  .footer__menu span {
-    font-size: 10px;
-    color: #6c757d;
-  }
-
-}
-
-
-@media (max-width: 570px) {
-
-  footer span {
-    font-size: 10px;
-  }
-
-  .footer__menu {
-    display: flex;
-    gap: 5px;
-  }
-
-  .footer__menu a {
-    padding: 4px 7px;
-    font-size: 8px;
-  }
-
-  .footer__menu span {
-    font-size: 9px;
-    color: #6c757d;
-  }
-
 }
 
 
